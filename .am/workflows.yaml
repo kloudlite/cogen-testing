@@ -1,7 +1,6 @@
 workflows:
   - name: workflow
-    instructions: |
-      This is a sample workflow
+    instructions: This is a sample workflow
     agent:
       repo: github.com/kloudlite/gmail-agent
       agent: KarthikGmailAgent
