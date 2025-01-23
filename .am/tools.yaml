@@ -1,0 +1,8 @@
+tools:
+  - module: tools
+    tool: SampleTool
+    initParams:
+      - name: apiKey
+        type: string
+      - name: clientId
+        type: string

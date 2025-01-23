@@ -1,0 +1,32 @@
+agents:
+  - name: agent
+    
+    instructions: |
+      This is a sample agent
+    
+    modelProvider: openai
+    model: 4o
+
+    tools:
+      - name: KarthikGmailAgent
+        description: "Karthik's Email agent"
+        tool: tools.SampleTool
+        repo: github.com/kloudlite/gmail-agent
+      
+      - name: DocumentRAG
+        description: "This is developer's documentation of vercel"
+        tool: tools.SampleTool
+        repo: github.com/kloudlite/gmail-agent
+
+      - name: DocumentRAG2
+        description: "This is developer's documentation of netflix"
+        tool: tools.SampleTool
+        repo: github.com/kloudlite/gmail-agent
+
+      - name: RanjitGmailAgent
+        description: "Karthik's Email agent"
+        tool: tools.SampleTool
+        repo: github.com/kloudlite/gmail-agent
+      
+      - tool: tools.SampleTool3
+        repo: github.com/kloudlite/sample-agent
