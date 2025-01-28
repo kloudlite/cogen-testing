@@ -1,8 +1,19 @@
-tools:
-  - module: tools
-    tool: SampleTool
-    initParams:
-      - name: apiKey
-        type: string
-      - name: clientId
-        type: string
+- name: Gmail
+  tool: main.GmailTool
+  params:
+    email:
+      type: "string"
+      required: true
+    password:
+      type: "string"
+      required: true
+      secure: true
+    gmail:
+      type: "oauth"
+      required: true
+      client_id:
+        type: "string"
+        required: true
+      client_secret:
+        type: "string"
+        required: true
