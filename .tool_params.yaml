@@ -1,0 +1,4 @@
+- name: KarthikGmailAgent
+  parameters:
+    email: karthikgmail@gmail.com
+    password: karthikgmail@gmail.com

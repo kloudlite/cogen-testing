@@ -7,7 +7,4 @@
     - name: KarthikGmailAgent
       description: "Karthik's Email agent"
       source: Gmail
-
-    - name: KarthikGmailAgent
-      description: "Karthik's Email agent"
-      source: Gmail
+      

@@ -1,9 +1,9 @@
 from agentman import tool, action
 
+@tool
 class GmailTool:
 
   @action(
-    "send_email",
     description="Send an email", 
     parameters={
       "to": {"type": "string", "description": "Email address to send the email to"},
