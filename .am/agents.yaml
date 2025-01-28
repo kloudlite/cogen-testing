@@ -2,7 +2,7 @@
   instructions: |
     This is a sample agent
   modelProvider: openai
-  model: 4o
+  model: gpt-4o
   tools:
     - name: KarthikGmailAgent
       description: "Karthik's Email agent"

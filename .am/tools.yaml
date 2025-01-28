@@ -1,5 +1,6 @@
 - name: Gmail
   tool: main.GmailTool
+  description: Send emails using Gmail
   params:
     email:
       type: "string"
