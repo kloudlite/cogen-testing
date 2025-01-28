@@ -6,7 +6,7 @@
   tools:
     - name: KarthikGmailAgent
       description: "Karthik's Email agent"
-      source: github.com/kloudlite/gmail-agent.Gmail
+      source: Gmail
 
     - name: KarthikGmailAgent
       description: "Karthik's Email agent"
