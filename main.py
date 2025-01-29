@@ -5,7 +5,7 @@ class GmailTool:
   def __init__(self, email: str, password: str):
     self.email = email
     self.password = password
-    
+
   @action(
     description="Send an email", 
     parameters={

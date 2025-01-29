@@ -1,12 +1,15 @@
 version: '3'
 
+dotenv:
+  - .env
+
 tasks:
   run-agent:
     cmds:
-      - pip install '../colang/dist/agentman-0.1-py3-none-any.whl' --force-reinstall
+      - pip install '../colang/dist/agentman-0.0.2-py3-none-any.whl' --force-reinstall
       - python -m agentman.run.agent agent
   
   run-tools:
     cmds:
-      - pip install '../colang/dist/agentman-0.1-py3-none-any.whl' --force-reinstall
-      - python -m agentman.run.tools Gmail
+      - pip install '../colang/dist/agentman-0.0.2-py3-none-any.whl' --force-reinstall
+      - python -m agentman.run.tool
