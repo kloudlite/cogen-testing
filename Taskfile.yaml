@@ -3,13 +3,21 @@ version: '3'
 dotenv:
   - .env
 
+env:
+  IMAGE_BASE: ghcr.io/kloudlite/colang/cogen-testing
+
 tasks:
   run-agent:
     cmds:
-      - pip install '../colang/dist/agentman-0.0.2-py3-none-any.whl' --force-reinstall
+      - pip install 'app/agentman-0.0.2-py3-none-any.whl' --force-reinstall
       - python -m agentman.run.agent agent
   
   run-tools:
     cmds:
       - pip install '../colang/dist/agentman-0.0.2-py3-none-any.whl' --force-reinstall
       - python -m agentman.run.tool
+
+  docker-build-agent:
+    cmds:
+      - docker build -t {{.IMAGE_BASE}}:latest .
+      - docker push {{.IMAGE_BASE}}:latest
