@@ -1,3 +1,10 @@
+- name: HackerNews
+  tool: main.HackerNewsTool
+  description: Get the latest news from Hacker News
+  params:
+    name:
+      type: "string"
+      required: true
 - name: Gmail
   tool: main.GmailTool
   description: Send emails using Gmail

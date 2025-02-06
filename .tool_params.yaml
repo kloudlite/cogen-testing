@@ -2,3 +2,6 @@
   parameters:
     email: karthikgmail@gmail.com
     password: karthikgmail@gmail.com
+- name: HackerNewsTool
+  parameters:
+    name: HackerNews

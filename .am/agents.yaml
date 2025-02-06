@@ -7,3 +7,6 @@
     - name: KarthikGmailAgent
       description: "Karthik's Email agent"
       source: Gmail
+    - name: HackerNewsTool
+      description: "Hacker News Tool"
+      source: HackerNews
